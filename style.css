@@ -1,0 +1,57 @@
+body {
+  background-color: #f8f9fa;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Card styling */
+.card {
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Form spacing */
+.card-body .form-control,
+.card-body .form-select {
+  border-radius: 0.5rem;
+}
+
+/* Button spacing */
+button {
+  border-radius: 0.5rem !important;
+}
+
+/* Todo items */
+.list-group-item {
+  border: none;
+  border-bottom: 1px solid #dee2e6;
+  background-color: #fff;
+  transition: background 0.3s;
+}
+
+.list-group-item:hover {
+  background-color: #f1f3f5;
+}
+
+/* Badges */
+.badge {
+  margin-right: 5px;
+}
+
+/* Action buttons */
+.btn-outline-success,
+.btn-outline-primary,
+.btn-outline-danger {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-outline-success:hover,
+.btn-outline-primary:hover,
+.btn-outline-danger:hover {
+  color: #fff;
+}
