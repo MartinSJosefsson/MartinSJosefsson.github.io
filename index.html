@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Todo App</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+  <div class="container py-4">
+    <h1 class="text-center mb-4">My Todo App</h1>
+
+        <div class="card mb-4">
+      <div class="card-body">
+        <div class="mb-3">
+  <label for="title" class="form-label">Title</label>
+  <input type="text" id="title" class="form-control">
+</div>
+<div class="mb-3">
+  <label for="description" class="form-label">Description</label>
+  <textarea id="description" class="form-control" rows="3"></textarea>
+</div>
+        <div class="row g-3 mb-3">
+          <div class="col-md-6">
+             <label for="dueDate" class="form-label">Due Date</label>
+            <input type="datetime-local" id="dueDate" class="form-control">
+          </div>
+          <div class="col-md-6">
+            <label for="assignee" class="form-label">Assign to Person (Optional)</label>
+            <select id="assignee" class="form-select">
+              <option value="">-- Select Person (Optional) --</option>
+              <option value="Martin Josefsson">Martin Josefsson</option>
+              <option value="Mehrdad Jarvan">Mehrdad Jarvan</option>
+            </select>
+          </div>
+        </div>
+        <div class="mb-3">
+          <input type="file" id="attachments" class="form-control" multiple>
+        </div>
+        <button id="addTodo" class="btn btn-primary">+ Add Todo</button>
+      </div>
+    </div>
+
+    
+    <div id="todoList" class="card">
+      <div class="card-header">
+        Todos
+      </div>
+      <ul class="list-group list-group-flush" id="todoItems">
+        
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
